@@ -1,0 +1,41 @@
+filename,label,manipulation_type,original_text_content
+auth_00000.jpg,authentic,none,O lançamento do novo foguete foi um sucesso absoluto! 🚀 #Science
+auth_00001.jpg,authentic,none,A economia global mostra sinais de recuperação leve este trimestre.
+auth_00002.jpg,authentic,none,A vista daqui de cima é simplesmente espetacular. #Nature
+auth_00003.jpg,authentic,none,Vocês viram o jogo ontem? Que virada histórica! ⚽
+auth_00004.jpg,authentic,none,Vocês viram o jogo ontem? Que virada histórica! ⚽
+auth_00005.jpg,authentic,none,Parabéns a toda a equipe pelo esforço e dedicação no projeto.
+auth_00006.jpg,authentic,none,A economia global mostra sinais de recuperação leve este trimestre.
+auth_00007.jpg,authentic,none,A economia global mostra sinais de recuperação leve este trimestre.
+auth_00008.jpg,authentic,none,Alguém tem indicação de série para maratonar no fim de semana?
+auth_00009.jpg,authentic,none,Café da manhã reforçado para começar bem o dia. Bom dia a todos!
+auth_00010.jpg,authentic,none,Alguém tem indicação de série para maratonar no fim de semana?
+auth_00011.jpg,authentic,none,O lançamento do novo foguete foi um sucesso absoluto! 🚀 #Science
+auth_00012.jpg,authentic,none,Café da manhã reforçado para começar bem o dia. Bom dia a todos!
+auth_00013.jpg,authentic,none,Café da manhã reforçado para começar bem o dia. Bom dia a todos!
+auth_00014.jpg,authentic,none,Alguém tem indicação de série para maratonar no fim de semana?
+auth_00015.jpg,authentic,none,Café da manhã reforçado para começar bem o dia. Bom dia a todos!
+auth_00016.jpg,authentic,none,Estudando Python e amando cada linha de código. #DevLife
+auth_00017.jpg,authentic,none,Café da manhã reforçado para começar bem o dia. Bom dia a todos!
+auth_00018.jpg,authentic,none,Alguém tem indicação de série para maratonar no fim de semana?
+auth_00019.jpg,authentic,none,Alguém tem indicação de série para maratonar no fim de semana?
+manip_00000.jpg,manipulated,jpeg_compression,Estudando Python e amando cada linha de código. #DevLife
+manip_00001.jpg,manipulated,visual_quality,Café da manhã reforçado para começar bem o dia. Bom dia a todos!
+manip_00002.jpg,manipulated,copy_paste,Parabéns a toda a equipe pelo esforço e dedicação no projeto.
+manip_00003.jpg,manipulated,text_swap,Alguém tem indicação de série para maratonar no fim de semana?
+manip_00004.jpg,manipulated,copy_paste,Alguém tem indicação de série para maratonar no fim de semana?
+manip_00005.jpg,manipulated,jpeg_compression,Vocês viram o jogo ontem? Que virada histórica! ⚽
+manip_00006.jpg,manipulated,jpeg_compression,A vista daqui de cima é simplesmente espetacular. #Nature
+manip_00007.jpg,manipulated,icon_insertion,A economia global mostra sinais de recuperação leve este trimestre.
+manip_00008.jpg,manipulated,jpeg_compression,Estudando Python e amando cada linha de código. #DevLife
+manip_00009.jpg,manipulated,visual_quality,A vista daqui de cima é simplesmente espetacular. #Nature
+manip_00010.jpg,manipulated,text_swap,Parabéns a toda a equipe pelo esforço e dedicação no projeto.
+manip_00011.jpg,manipulated,metrics_change,Café da manhã reforçado para começar bem o dia. Bom dia a todos!
+manip_00012.jpg,manipulated,visual_quality,A vista daqui de cima é simplesmente espetacular. #Nature
+manip_00013.jpg,manipulated,visual_quality,Estudando Python e amando cada linha de código. #DevLife
+manip_00014.jpg,manipulated,jpeg_compression,Estudando Python e amando cada linha de código. #DevLife
+manip_00015.jpg,manipulated,icon_insertion,Café da manhã reforçado para começar bem o dia. Bom dia a todos!
+manip_00016.jpg,manipulated,visual_quality,Estudando Python e amando cada linha de código. #DevLife
+manip_00017.jpg,manipulated,jpeg_compression,Estudando Python e amando cada linha de código. #DevLife
+manip_00018.jpg,manipulated,metrics_change,Vocês viram o jogo ontem? Que virada histórica! ⚽
+manip_00019.jpg,manipulated,visual_quality,A economia global mostra sinais de recuperação leve este trimestre.
