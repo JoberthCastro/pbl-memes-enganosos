@@ -1,201 +1,81 @@
 filename,true_label,pred_label,probability,ocr_mean_conf,text_snippet
-manip_00407.jpg,1,1,0.7618,93.13,User Estudo da USP mostra que 
-auth_00293.jpg,0,0,0.8586,89.15,Ataxa de desemprego caiu para 
-auth_00217.jpg,0,0,0.8851,92.07,Bolsa de Valores fecha em alta
-auth_00054.jpg,0,1,0.6532,87.0,Jornal_Real_54 Festival de cin
-manip_00114.jpg,1,1,0.6748,92.94,User Bolsa de Valores fecha em
-manip_00482.jpg,1,1,0.7532,86.4,User A campanha de vacinagao c
-manip_00186.jpg,1,1,0.7981,92.68,User Estudo da USP mostra que 
-manip_00396.jpg,1,1,0.5369,88.59,User Langamento do novo satéli
-auth_00087.jpg,0,0,0.9397,84.62,Nova do sistema bancario permi
-auth_00021.jpg,0,1,0.7225,88.05,Jornal_Real_21 O consumo de en
-manip_00354.jpg,1,1,0.7214,85.79,User A de vacinacao contra a g
-manip_00089.jpg,1,1,0.6513,87.6,User O consumo de energia elét
-manip_00375.jpg,1,1,0.89,87.93,User Pesquisa aponta crescimen
-auth_00445.jpg,0,1,0.6555,91.44,Jornal_Real_445 Receita Federa
-auth_00330.jpg,0,0,0.9218,91.18,Délar opera em baixa nesta ter
-auth_00276.jpg,0,0,0.7621,89.93,Estudo da USP mostra que prati
-manip_00385.jpg,1,1,0.7961,91.2,User China cria 'sol artificia
-auth_00053.jpg,0,0,0.7678,87.57,Receita Federal libera a consu
-manip_00015.jpg,1,1,0.5728,88.46,User Nova do sistema bancario 
-auth_00339.jpg,0,1,0.5095,92.65,Jornal_Real_339 Governo anunci
-manip_00176.jpg,1,1,0.7684,89.61,User Receita Federal libera a 
-auth_00344.jpg,0,0,0.6783,84.2,Comecam hoje as para o concurs
-manip_00226.jpg,1,1,0.8439,85.7,User @user Langamento do novo 
-auth_00359.jpg,0,1,0.5748,89.56,Jornal_Real_359 Ministério da 
-manip_00379.jpg,1,1,0.9199,84.27,User hoje as inscrigdes para o
-manip_00322.jpg,1,1,0.8925,87.0,User Bilionario George Soros e
-manip_00412.jpg,1,1,0.8896,86.38,User @user O consumo de energi
-manip_00335.jpg,1,1,0.8728,94.0,User Bolsa de Valores fecha em
-auth_00071.jpg,0,0,0.8555,81.08,Ministério da Sade reforca imp
-manip_00083.jpg,1,1,0.8736,86.0,User @user Festival de cinema 
-auth_00205.jpg,0,0,0.8949,91.45,Prefeitura inaugura 5 novas cr
-manip_00182.jpg,1,1,0.7692,86.78,User @user Transito intenso na
-manip_00151.jpg,1,1,0.8672,89.17,User Museu de Arte Moderna abr
-manip_00492.jpg,1,1,0.8126,91.35,User A taxa de desemprego caiu
-manip_00095.jpg,1,1,0.758,89.65,User Governo anuncia redugao d
-auth_00492.jpg,0,0,0.5506,89.35,Jornal_Real_492 Transito inten
-auth_00435.jpg,0,0,0.8751,77.44,A campanha de vacinacdo contra
-auth_00130.jpg,0,1,0.7145,91.05,Jornal_Real_130 Receita Federa
-auth_00273.jpg,0,1,0.741,82.85,Jornal_Real_273 A campanha de 
-auth_00385.jpg,0,1,0.5937,91.0,Jornal_Real_385 Bolsa de Valor
-auth_00306.jpg,0,0,0.801,83.6,Comecam hoje as para o concurs
-manip_00036.jpg,1,1,0.8066,88.38,User Museu de Arte Moderna abr
-manip_00272.jpg,1,1,0.8672,88.44,User @user Brasil vence a Arge
-auth_00313.jpg,0,0,0.7792,84.33,Pesquisa aponta crescimento do
-auth_00212.jpg,0,1,0.7537,87.1,Jornal_Real_212 O consumo de e
-manip_00177.jpg,1,1,0.7159,92.5,User Cientistas descobrem nova
-auth_00427.jpg,0,0,0.8378,91.33,Transito intenso na Avenida Pa
-manip_00214.jpg,1,1,0.8133,92.18,User Bolsa de Valores fecha em
-manip_00011.jpg,1,1,0.7936,89.0,User Prefeitura inaugura 5 nov
-auth_00263.jpg,0,0,0.8894,86.77,Festival de cinema premia dire
-manip_00195.jpg,1,1,0.7301,88.72,User Nova atualizagao do siste
-auth_00309.jpg,0,0,0.9083,92.36,Prefeitura inaugura 5 novas cr
-manip_00416.jpg,1,1,0.8773,89.71,User Cientistas descobrem nova
-auth_00121.jpg,0,0,0.8101,90.33,Lancamento do novo satélite va
-auth_00201.jpg,0,1,0.642,92.56,Jornal_Real_201 Langamento do 
-auth_00161.jpg,0,0,0.8336,90.6,Estudo da USP mostra que prati
-manip_00417.jpg,1,1,0.6715,89.07,User Pesquisa aponta crescimen
-auth_00134.jpg,0,0,0.7805,89.22,Cientistas descobrem nova espé
-auth_00482.jpg,0,0,0.8596,87.53,Receita Federal libera a consu
-manip_00104.jpg,1,1,0.8852,83.43,User Estudo da USP mostra que 
-manip_00497.jpg,1,1,0.5695,88.25,User Pesquisa aponta crescimen
-manip_00393.jpg,1,1,0.9179,83.65,User Quser Comecam hoje as ins
-manip_00360.jpg,1,1,0.7168,88.28,User Like Langamento do novo s
-auth_00214.jpg,0,0,0.8859,81.6,A campanha de contra a gripe c
-auth_00235.jpg,0,0,0.7228,81.36,Comecam hoje as inscrices para
-auth_00488.jpg,0,1,0.7873,93.0,Jornal_Real_488 Estudo da USP 
-manip_00191.jpg,1,1,0.6812,91.95,User Bolsa de Valores fecha em
-manip_00018.jpg,1,1,0.7879,86.96,User @user O consumo de energi
-auth_00034.jpg,0,1,0.5357,90.86,Jornal_Real_34 Pesquisa aponta
-auth_00259.jpg,0,0,0.8894,86.77,Festival de cinema premia dire
-auth_00160.jpg,0,0,0.9276,87.58,Prefeitura inaugura 5 novas cr
-auth_00149.jpg,0,1,0.7014,92.05,Jornal_Real_149 O novo do IPCC
-manip_00113.jpg,1,1,0.6682,92.65,User Prefeitura inaugura 5 nov
-manip_00447.jpg,1,1,0.7978,92.83,User Vaza audio onde o candida
-manip_00329.jpg,1,1,0.8125,91.0,User Museu de Arte Moderna abr
-manip_00146.jpg,1,1,0.8812,84.38,User Ministério da Satide refo
-auth_00241.jpg,0,0,0.8782,87.0,Governo anuncia reducao de 5% 
-auth_00459.jpg,0,1,0.8759,91.05,Jornal_Real_459 Receita Federa
-manip_00100.jpg,1,1,0.6649,87.36,User @user Langamento do novo 
-auth_00295.jpg,0,1,0.7948,89.93,Jornal_Real_295 Nova atualizag
-auth_00257.jpg,0,1,0.559,93.68,Jornal_Real_257 Estudo da USP 
-manip_00263.jpg,1,1,0.7499,92.26,User Estudo da USP mostra que 
-manip_00216.jpg,1,1,0.7145,86.43,User O novo do IPCC alerta par
-manip_00223.jpg,1,1,0.9116,86.15,User O consumo de energia elét
-manip_00474.jpg,1,1,0.9057,92.29,URGENTE: Ministro confirma que
-auth_00080.jpg,0,0,0.8343,85.67,Festival de cinema premia dire
-auth_00190.jpg,0,0,0.5525,85.05,Jornal_Real_190 A campanha de 
-auth_00001.jpg,0,1,0.5256,90.53,Jornal_Real_1 Brasil vence a A
-auth_00315.jpg,0,0,0.8878,90.5,Prefeitura inaugura 5 novas cr
-auth_00105.jpg,0,1,0.6633,90.21,Jornal_Real_105 Nova atualizag
-manip_00034.jpg,1,1,0.9449,84.19,User Comecam hoje as inscrigde
-manip_00452.jpg,1,1,0.8185,92.06,User Estudo da USP mostra que 
-manip_00368.jpg,1,1,0.7835,92.8,User Médico de Harvard revela:
-auth_00387.jpg,0,0,0.5806,89.81,Jornal_Real_387 Ministério da 
-auth_00013.jpg,0,0,0.8435,77.21,A campanha de contra a gripe c
-manip_00032.jpg,1,1,0.8669,84.65,User Governo anuncia redugao d
-manip_00444.jpg,1,1,0.9034,81.31,User Dolar opera em baixa nest
-auth_00473.jpg,0,1,0.6252,84.9,Jornal_Real_473 A campanha de 
-manip_00035.jpg,1,1,0.7206,89.69,User Prefeitura inaugura 5 nov
-auth_00252.jpg,0,0,0.7841,92.43,Estudo da USP mostra que prati
-manip_00475.jpg,1,1,0.8399,86.7,User @user O novo relatorio do
-auth_00348.jpg,0,1,0.7863,91.0,Jornal_Real_348 O consumo de e
-auth_00345.jpg,0,0,0.5856,87.53,Jornal_Real_345 Langamento do 
-manip_00441.jpg,1,0,0.5071,87.43,User O novo relatério do IPCC 
-manip_00419.jpg,1,1,0.8193,83.46,User Pesquisa apcsilarerescime
-manip_00390.jpg,1,1,0.7996,90.35,User O consumo de energia elét
-auth_00319.jpg,0,0,0.8978,91.71,Bolsa de Valores fecha em alta
-manip_00256.jpg,1,1,0.9037,85.16,User @user Receita Federal lib
-auth_00187.jpg,0,1,0.5625,88.6,Jornal_Real_187 O novo do IPCC
-manip_00278.jpg,1,1,0.8483,89.0,User Museu de Arte Moderna abr
-manip_00061.jpg,1,1,0.5711,89.22,User Receita Federal libera a 
-manip_00064.jpg,1,1,0.7199,91.0,User Prefeitura inaugura 5 nov
-auth_00251.jpg,0,0,0.5398,83.74,Jornal_Real_251 A ccampanha de
-manip_00248.jpg,1,1,0.8139,89.75,User O novo do IPCC alerta par
-auth_00389.jpg,0,1,0.643,89.25,Jornal_Real_389 Ministério da 
-auth_00049.jpg,0,0,0.6309,92.05,Jornal_Real_49 Brasil vence a 
-manip_00395.jpg,1,1,0.8046,90.2,User Estudo da USP mostra que 
-manip_00178.jpg,1,1,0.8607,93.89,User Bolsa de Valores fecha em
-auth_00366.jpg,0,0,0.8859,81.6,A campanha de contra a gripe c
-auth_00372.jpg,0,1,0.5701,93.12,Jornal_Real_372 Prefeitura ina
-auth_00188.jpg,0,0,0.904,91.73,Prefeitura inaugura 5 novas cr
-manip_00339.jpg,1,0,0.5057,83.75,User Ministério da Satide refo
-auth_00413.jpg,0,0,0.8222,82.56,Pesquisa aponta crescimento do
-manip_00284.jpg,1,1,0.7109,93.56,User Bolsa de Valores fecha em
-auth_00270.jpg,0,0,0.5072,90.79,Jornal_Real_270 Pesquisa apont
-auth_00308.jpg,0,1,0.6436,93.62,Jornal_Real_308 Prefeitura ina
-auth_00048.jpg,0,0,0.7939,92.62,Bolsa de Valores fecha em alta
-auth_00050.jpg,0,0,0.8853,90.09,Prefeitura inaugura 5 novas cr
-auth_00020.jpg,0,0,0.5556,93.0,Jornal_Real_20 A taxa de desem
-auth_00052.jpg,0,0,0.8583,87.29,Jornal_Real_52 Langamento do n
-auth_00496.jpg,0,1,0.8032,92.93,Jornal_Real_496 Cientistas des
-manip_00413.jpg,1,1,0.9035,86.43,User @user Museu de Arte Moder
-auth_00174.jpg,0,1,0.7528,84.05,Jornal_Real_174 A ccampanha de
-auth_00106.jpg,0,0,0.7025,91.57,Brasil vence a Argentina por 3
-auth_00264.jpg,0,0,0.8771,88.57,Ataxa de desemprego caiu para 
-auth_00151.jpg,0,1,0.7357,93.44,Jornal_Real_151 Prefeitura ina
-auth_00166.jpg,0,0,0.8498,83.73,Ministério da Saude reforca im
-auth_00243.jpg,0,1,0.7631,90.75,Jornal_Real_243 O consumo de e
-auth_00091.jpg,0,0,0.9416,87.06,O novo relatério do IPCC alert
-auth_00363.jpg,0,1,0.6567,84.35,Jornal_Real_363 A ccampanha de
-manip_00159.jpg,1,1,0.8014,86.08,User @user O consumo de energi
-manip_00276.jpg,1,1,0.691,88.79,User Pesquisa aponta crescimen
-auth_00102.jpg,0,0,0.8458,92.07,Bolsa de Valores fecha em alta
-auth_00456.jpg,0,1,0.6652,86.62,Jornal_Real_456 Ministério da 
-manip_00257.jpg,1,1,0.8299,92.26,User O consumo de energia elét
-auth_00328.jpg,0,0,0.8853,90.73,Brasil vence a Argentina por 3
-auth_00419.jpg,0,1,0.8191,91.5,Jornal_Real_419 Cientistas des
-manip_00074.jpg,1,1,0.8988,94.2,User Decreto secreto proibe o 
-manip_00092.jpg,1,1,0.7617,84.35,User A ccampanha de vacinacao 
-auth_00458.jpg,0,1,0.6004,92.54,Jornal_Real_458 Nova do sistem
-auth_00043.jpg,0,1,0.5578,90.06,Jornal_Real_43 Museu de Arte M
-auth_00401.jpg,0,0,0.8878,90.5,Prefeitura inaugura 5 novas cr
-manip_00383.jpg,1,1,0.9056,93.33,User URGENTE: Ministro confirm
-manip_00246.jpg,1,1,0.7697,90.95,User Estudo da USP mostra que 
-manip_00241.jpg,1,1,0.883,91.38,User Museu de Arte Moderna abr
-auth_00457.jpg,0,0,0.91,87.17,Transito intenso na Avenida Pa
-manip_00043.jpg,1,1,0.6247,87.83,User Pesquisa aponta crescimen
-manip_00324.jpg,1,1,0.8823,87.96,User @user Receita Federal lib
-auth_00441.jpg,0,0,0.7639,85.0,Pesquisa aponta crescimento do
-auth_00189.jpg,0,1,0.6506,92.35,Jornal_Real_189 Governo anunci
-manip_00162.jpg,1,1,0.8602,88.25,User @user Cientistas descobre
-manip_00356.jpg,1,1,0.7033,90.9,User Museu de Arte Moderna abr
-manip_00167.jpg,1,1,0.8962,84.57,User @user Festival de cinema 
-auth_00303.jpg,0,1,0.65,88.0,Jornal_Real_303 Receita Federa
-manip_00098.jpg,1,1,0.8844,89.57,User Bilionario George Soros e
-manip_00285.jpg,1,1,0.7254,89.88,User Museu de Arte Moderna abr
-manip_00476.jpg,1,1,0.8399,91.24,User Governo anuncia redugao d
-auth_00099.jpg,0,0,0.8534,91.1,Délar opera em baixa nesta ter
-auth_00058.jpg,0,0,0.8829,91.09,Governo anuncia de 5% no impos
-auth_00499.jpg,0,0,0.8533,90.43,Pesquisa aponta crescimento do
-auth_00443.jpg,0,0,0.9114,90.88,Nova do sistema bancario permi
-auth_00350.jpg,0,0,0.8996,84.29,A campanha de contra a gripe c
-manip_00436.jpg,1,1,0.5069,90.79,User Pesquisa aponta crescimen
-auth_00088.jpg,0,0,0.8527,90.07,Ataxa de desemprego caiu para 
-manip_00301.jpg,1,0,0.5223,90.85,User Prefeitura inaugura 5 nov
-manip_00279.jpg,1,1,0.82,86.33,User Museu de Arte Moderna abr
-auth_00191.jpg,0,1,0.795,90.89,Jornal_Real_191 Receita Federa
-auth_00486.jpg,0,0,0.8755,90.42,Lancamento do novo satélite va
-auth_00269.jpg,0,0,0.6337,90.36,Jornal_Real_269 Pesquisa apont
-manip_00163.jpg,1,1,0.7004,91.39,User Bolsa de Valores fecha em
-manip_00150.jpg,1,1,0.5704,83.07,User Cientistas descobrem nova
-auth_00169.jpg,0,0,0.8358,79.73,Ministério da Sade reforca imp
-manip_00341.jpg,1,1,0.8496,91.04,User Receita Federal libera a 
-auth_00480.jpg,0,0,0.8533,81.78,Pesquisa aponta crescimento do
-manip_00267.jpg,1,1,0.8154,92.0,User Museu de Arte Moderna abr
-manip_00471.jpg,1,1,0.8594,88.95,User Bolsa de Valores fecha em
-manip_00367.jpg,1,1,0.8496,90.11,User Fim da propriedade privad
-manip_00313.jpg,1,1,0.8136,90.16,User Bolsa de Valores fecha em
-manip_00189.jpg,1,1,0.8224,88.76,User O novo do IPCC alerta par
-manip_00426.jpg,1,1,0.878,80.75,User Dolar opera em baixa nest
-auth_00466.jpg,0,1,0.7694,90.53,Jornal_Real_466 Receita Federa
-manip_00003.jpg,1,1,0.6305,90.21,User Pesquisa aponta crescimen
-manip_00042.jpg,1,1,0.8001,91.8,User Foto comprova que o ex-pr
-manip_00462.jpg,1,1,0.7856,92.27,User Foto comprova que o ex-pr
-manip_00409.jpg,1,1,0.5152,91.39,User A taxa de desemprego caiu
-manip_00336.jpg,1,1,0.7548,86.13,User @user Transito intenso na
-manip_00012.jpg,1,1,0.8699,84.05,User @user Comecam hoje as ins
-auth_00343.jpg,0,1,0.7726,90.79,Jornal_Real_343 Nova atualizag
-manip_00094.jpg,1,1,0.7185,91.64,User Receita Federal libera a 
-manip_00252.jpg,1,1,0.7691,88.63,User Receita Federal libera a 
+auth_00071.jpg,0,0,0.75,94.92,Ministério da Saúde reforça im
+manip_00051.jpg,1,1,0.8149,96.07,User Urnas eletrônicas foram p
+manip_00096.jpg,1,1,0.8422,94.76,User Museu de Arte Moderna abr
+auth_00192.jpg,0,1,0.7626,95.16,Jornal Real 192 Lançamento do 
+auth_00151.jpg,0,1,0.7585,93.44,Jornal_Real_151 Prefeitura ina
+auth_00052.jpg,0,1,0.7434,95.11,Jornal Real 52 Lançamento do n
+auth_00050.jpg,0,0,0.7622,95.09,Prefeitura inaugura 5 novas cr
+auth_00107.jpg,0,0,0.739,93.77,Bolsa de Valores fecha em alta
+auth_00196.jpg,0,1,0.8088,95.24,Jornal Real 196 A taxa de dese
+manip_00182.jpg,1,1,0.7828,93.94,User Começam hoje as inscriçõe
+manip_00125.jpg,1,1,0.8285,96.07,User Urnas eletrônicas foram p
+manip_00123.jpg,1,1,0.7649,88.6,User @user Cientistas descobre
+manip_00038.jpg,1,1,0.8213,89.36,User @user Estudo da USP mostr
+auth_00021.jpg,0,1,0.7982,95.14,Jornal Real 21 O consumo de en
+auth_00102.jpg,0,0,0.7375,93.29,Bolsa de Valores fecha em alta
+manip_00183.jpg,1,1,0.8179,90.63,User A taxa de desemprego caiu
+auth_00054.jpg,0,1,0.831,94.0,Jornal Real 54 Festival de cin
+manip_00089.jpg,1,1,0.7884,94.65,User Governo anuncia redução d
+manip_00037.jpg,1,1,0.771,93.78,User Bolsa de Valores fecha em
+auth_00193.jpg,0,1,0.7749,94.78,Jornal Real 193 Começam hoje a
+auth_00121.jpg,0,0,0.7325,95.25,Lançamento do novo satélite va
+auth_00106.jpg,0,0,0.7073,93.21,Brasil vence a Argentina por 3
+manip_00138.jpg,1,1,0.75,93.5,User Ministério da Saúde refor
+auth_00087.jpg,0,0,0.7493,94.89,Nova atualização do sistema ba
+manip_00194.jpg,1,1,0.8117,93.64,User ONU aprova resolução que 
+manip_00092.jpg,1,1,0.8316,88.0,User @user Bolsa de Valores fe
+manip_00163.jpg,1,1,0.799,90.94,User Quser Prefeitura inaugura
+auth_00157.jpg,0,1,0.7631,94.43,Jornal_Real_157 Nova atualizaç
+auth_00058.jpg,0,0,0.7728,94.5,Governo anuncia redução de 5% 
+manip_00173.jpg,1,1,0.8048,92.81,User Prefeitura inaugura 5 nov
+manip_00159.jpg,1,1,0.7954,94.33,User Nova lei de transito: Mul
+auth_00116.jpg,0,1,0.7878,94.59,Jornal_Real_116 Lançamento do 
+manip_00010.jpg,1,1,0.8351,92.64,User O consumo de energia elét
+auth_00130.jpg,0,1,0.7976,93.79,Jornal_Real_130 Receita Federa
+auth_00020.jpg,0,1,0.785,93.0,Jornal_Real_20 A taxa de desem
+manip_00150.jpg,1,1,0.8152,93.58,User Governo anuncia redução d
+auth_00099.jpg,0,0,0.7342,94.8,Dólar opera em baixa nesta ter
+manip_00171.jpg,1,1,0.8387,94.39,User Vaza audio onde o candida
+manip_00147.jpg,1,1,0.831,93.82,User v Prefeitura inaugura 5 n
+auth_00037.jpg,0,1,0.7836,94.81,Jornal Real 37 Dólar opera em 
+manip_00128.jpg,1,1,0.8075,94.5,User Começam hoje as inscriçõe
+manip_00097.jpg,1,1,0.777,93.4,User A campanha de vacinação c
+manip_00023.jpg,1,1,0.8222,93.06,User Festival de cinema premia
+auth_00092.jpg,0,0,0.7354,93.14,Bolsa de Valores fecha em alta
+manip_00144.jpg,1,1,0.7972,93.07,User Pesquisa aponta crescimen
+auth_00048.jpg,0,0,0.7465,93.54,Bolsa de Valores fecha em alta
+auth_00134.jpg,0,0,0.7283,89.67,Cientistas descobrem nova espé
+auth_00057.jpg,0,1,0.7626,95.25,Jornal Real 57 Bolsa de Valore
+auth_00001.jpg,0,1,0.7709,94.05,Jornal Real 1 Brasil vence a A
+auth_00014.jpg,0,1,0.7877,92.57,Jornal_Real_14 Cientistas desc
+auth_00160.jpg,0,0,0.7901,94.67,Prefeitura inaugura 5 novas cr
+auth_00149.jpg,0,1,0.7821,94.62,Jornal_Real_149 O novo relatór
+manip_00127.jpg,1,1,0.7697,94.76,User Governo anuncia redução d
+manip_00160.jpg,1,1,0.7261,94.29,User Nova atualização do siste
+manip_00146.jpg,1,1,0.7324,92.35,User Festival de cinema premia
+manip_00002.jpg,1,1,0.8224,92.67,User Langamento do novo satéli
+auth_00074.jpg,0,1,0.7959,93.35,Jornal_Real_74 Langamento do n
+auth_00063.jpg,0,1,0.7777,95.0,Jornal Real 63 Ministério da S
+manip_00103.jpg,1,1,0.7628,93.48,User O novo relatório do IPCC 
+manip_00068.jpg,1,1,0.7856,90.07,User Dólar opera em baixa nest
+manip_00052.jpg,1,1,0.8272,93.35,User Receita Federal libera a 
+auth_00088.jpg,0,0,0.7198,92.43,Ataxa de desemprego caiu para 
+manip_00095.jpg,1,1,0.7498,95.85,User Documento vazado da NASA 
+manip_00069.jpg,1,1,0.8147,93.11,User Receita Federal libera a 
+auth_00167.jpg,0,0,0.7557,95.0,Ministério da Saúde reforça im
+manip_00199.jpg,1,1,0.7837,94.0,User Museu de Arte Moderna abr
+manip_00122.jpg,1,1,0.8495,95.63,User Fim da propriedade privad
+auth_00103.jpg,0,1,0.7875,93.07,Jornal_Real_103 Cientistas des
+auth_00179.jpg,0,1,0.729,91.16,Jornal_Real_179 Brasil vence a
+auth_00188.jpg,0,0,0.7903,93.18,Prefeitura inaugura 5 novas cr
+auth_00199.jpg,0,0,0.746,95.0,Governo anuncia redução de 5% 
+manip_00115.jpg,1,1,0.843,94.25,User Cientistas admitem em seg
+manip_00143.jpg,1,1,0.8088,94.24,User Trânsito intenso na Aveni
+auth_00183.jpg,0,0,0.7386,95.15,Lançamento do novo satélite va
+manip_00081.jpg,1,1,0.8153,93.44,User Dólar opera em baixa nest
+manip_00175.jpg,1,1,0.8027,87.9,User @user Cientistas descobre
+auth_00175.jpg,0,1,0.7789,94.84,Jornal Real 175 Trânsito inten
+manip_00067.jpg,1,1,0.832,94.0,User Governo anuncia redução d
+manip_00129.jpg,1,1,0.7851,88.67,User Cientistas descobrem nova
+auth_00129.jpg,0,1,0.8113,94.26,Jornal Real 129 Festival de ci

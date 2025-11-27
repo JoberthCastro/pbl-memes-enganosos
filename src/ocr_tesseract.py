@@ -14,11 +14,33 @@ from pathlib import Path
 #
 # Caso esteja em outro lugar, você pode ajustar a variável `TESSERACT_WINDOWS_PATH`
 # abaixo para o caminho correto do seu tesseract.exe.
-TESSERACT_WINDOWS_PATH = r"C:\Users\jober\Desktop\tesseract\tesseract.exe"
+# Tenta detectar automaticamente o Tesseract no Windows
 if os.name == "nt":
-    # Define o caminho explicitamente; se estiver diferente na sua máquina,
-    # basta ajustar a string acima.
-    pytesseract.pytesseract.tesseract_cmd = TESSERACT_WINDOWS_PATH
+    # Caminhos comuns do Tesseract no Windows
+    possible_paths = [
+        r"C:\Program Files\Tesseract-OCR\tesseract.exe",
+        r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe",
+        r"C:\Users\jober\Desktop\tesseract\tesseract.exe",  # Caminho customizado (se existir)
+    ]
+    
+    # Tenta encontrar o executável
+    tesseract_found = False
+    for path in possible_paths:
+        if os.path.exists(path):
+            pytesseract.pytesseract.tesseract_cmd = path
+            tesseract_found = True
+            break
+    
+    # Se não encontrou, tenta usar o PATH do sistema
+    if not tesseract_found:
+        try:
+            # Testa se está no PATH
+            import subprocess
+            subprocess.run(["tesseract", "--version"], 
+                         capture_output=True, check=True)
+            # Se chegou aqui, está no PATH
+        except (subprocess.CalledProcessError, FileNotFoundError):
+            print("⚠️ Aviso: Tesseract não encontrado. Configure o caminho em src/ocr_tesseract.py")
 
 # Configuração padrão do Tesseract
 # --psm 6: Assume um único bloco de texto uniforme.

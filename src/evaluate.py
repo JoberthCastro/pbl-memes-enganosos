@@ -205,10 +205,14 @@ def evaluate(dataset_dir, model_path, output_dir='reports', device='cpu'):
             with torch.no_grad():
                 logits = model(v_emb, t_emb, ocr_t)
                 probs = torch.softmax(logits, dim=1)
-                score, pred_idx = torch.max(probs, 1)
                 
-            pred_label = pred_idx.item()
-            prob_score = score.item()
+            # Aplicar threshold ótimo (0.70) em vez de argmax padrão
+            # Isso melhora o balanceamento entre precision e recall
+            # Threshold atualizado após retreino com mais dados
+            OPTIMAL_THRESHOLD = 0.70
+            prob_manipulated = probs[0, 1].item()
+            pred_label = 1 if prob_manipulated >= OPTIMAL_THRESHOLD else 0
+            prob_score = prob_manipulated if pred_label == 1 else (1 - prob_manipulated)
             
             # Store
             y_true.append(true_label)

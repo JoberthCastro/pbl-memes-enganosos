@@ -133,12 +133,16 @@ async def infer(
         t_ocr = torch.tensor([ocr_stats], dtype=torch.float32).to(DEVICE)
         
         # 4. Fusion Prediction
+        # Aplicar threshold ótimo (0.70) para melhor balanceamento
+        # Threshold atualizado após retreino com mais dados
+        OPTIMAL_THRESHOLD = 0.70
         with torch.no_grad():
             logits = MODELS['fusion'](t_v_emb, t_t_emb, t_ocr)
             probs = torch.softmax(logits, dim=1)
-            score, pred_idx = torch.max(probs, 1)
-            label = "Enganoso/Suspeito" if pred_idx.item() == 1 else "Autêntico"
-            score_val = float(score.item())
+            prob_manipulated = probs[0, 1].item()
+            pred_idx = 1 if prob_manipulated >= OPTIMAL_THRESHOLD else 0
+            label = "Enganoso/Suspeito" if pred_idx == 1 else "Autêntico"
+            score_val = float(prob_manipulated if pred_idx == 1 else (1 - prob_manipulated))
             
         # 5. LLM Verification
         llm_meta = {

@@ -1,201 +1,81 @@
 filename,label,manipulation_type,original_text_content
-manip_00407.jpg,manipulated,metrics_change,Estudo da USP mostra que prática regular de exercícios reduz riscos cardíacos em 30%.
-auth_00293.jpg,authentic,none,"A taxa de desemprego caiu para 8,5% no último trimestre, segundo dados do IBGE."
-auth_00217.jpg,authentic,none,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
-auth_00054.jpg,authentic,none,Festival de cinema premia diretor brasileiro com o Leão de Ouro. 🎬
-manip_00114.jpg,manipulated,jpeg_compression,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
-manip_00482.jpg,manipulated,icon_insertion,A campanha de vacinação contra a gripe começa na próxima segunda-feira em todo o país.
-manip_00186.jpg,manipulated,icon_insertion,Estudo da USP mostra que prática regular de exercícios reduz riscos cardíacos em 30%.
-manip_00396.jpg,manipulated,icon_insertion,Lançamento do novo satélite vai melhorar a previsão do tempo no Nordeste.
-auth_00087.jpg,authentic,none,Nova atualização do sistema bancário permitirá transferências instantâneas internacionais.
-auth_00021.jpg,authentic,none,O consumo de energia elétrica aumentou 4% em relação ao mesmo período do ano passado.
-manip_00354.jpg,manipulated,icon_insertion,A campanha de vacinação contra a gripe começa na próxima segunda-feira em todo o país.
-manip_00089.jpg,manipulated,jpeg_compression,O consumo de energia elétrica aumentou 4% em relação ao mesmo período do ano passado.
-manip_00375.jpg,manipulated,icon_insertion,Pesquisa aponta crescimento do comércio eletrônico no primeiro semestre.
-auth_00445.jpg,authentic,none,Receita Federal libera a consulta ao terceiro lote de restituição do Imposto de Renda.
-auth_00330.jpg,authentic,none,"Dólar opera em baixa nesta terça-feira, cotado a R$ 4,95."
-auth_00276.jpg,authentic,none,Estudo da USP mostra que prática regular de exercícios reduz riscos cardíacos em 30%.
-manip_00385.jpg,manipulated,text_swap,Ministério da Saúde reforça importância de manter carteira de vacinação atualizada.
-auth_00053.jpg,authentic,none,Receita Federal libera a consulta ao terceiro lote de restituição do Imposto de Renda.
-manip_00015.jpg,manipulated,jpeg_compression,Nova atualização do sistema bancário permitirá transferências instantâneas internacionais.
-auth_00339.jpg,authentic,none,Governo anuncia redução de 5% no imposto para empresas de tecnologia verde.
-manip_00176.jpg,manipulated,metrics_change,Receita Federal libera a consulta ao terceiro lote de restituição do Imposto de Renda.
-auth_00344.jpg,authentic,none,Começam hoje as inscrições para o concurso público com 500 vagas.
-manip_00226.jpg,manipulated,visual_quality,Lançamento do novo satélite vai melhorar a previsão do tempo no Nordeste.
-auth_00359.jpg,authentic,none,Ministério da Saúde reforça importância de manter carteira de vacinação atualizada.
-manip_00379.jpg,manipulated,jpeg_compression,Começam hoje as inscrições para o concurso público com 500 vagas.
-manip_00322.jpg,manipulated,text_swap,Nova atualização do sistema bancário permitirá transferências instantâneas internacionais.
-manip_00412.jpg,manipulated,visual_quality,O consumo de energia elétrica aumentou 4% em relação ao mesmo período do ano passado.
-manip_00335.jpg,manipulated,copy_paste,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
 auth_00071.jpg,authentic,none,Ministério da Saúde reforça importância de manter carteira de vacinação atualizada.
-manip_00083.jpg,manipulated,visual_quality,Festival de cinema premia diretor brasileiro com o Leão de Ouro. 🎬
-auth_00205.jpg,authentic,none,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
-manip_00182.jpg,manipulated,visual_quality,Trânsito intenso na Avenida Paulista devido a obras de manutenção no asfalto.
-manip_00151.jpg,manipulated,copy_paste,Museu de Arte Moderna abre exposição gratuita sobre o Modernismo no Brasil.
-manip_00492.jpg,manipulated,metrics_change,"A taxa de desemprego caiu para 8,5% no último trimestre, segundo dados do IBGE."
-manip_00095.jpg,manipulated,jpeg_compression,Governo anuncia redução de 5% no imposto para empresas de tecnologia verde.
-auth_00492.jpg,authentic,none,Trânsito intenso na Avenida Paulista devido a obras de manutenção no asfalto.
-auth_00435.jpg,authentic,none,A campanha de vacinação contra a gripe começa na próxima segunda-feira em todo o país.
-auth_00130.jpg,authentic,none,Receita Federal libera a consulta ao terceiro lote de restituição do Imposto de Renda.
-auth_00273.jpg,authentic,none,A campanha de vacinação contra a gripe começa na próxima segunda-feira em todo o país.
-auth_00385.jpg,authentic,none,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
-auth_00306.jpg,authentic,none,Começam hoje as inscrições para o concurso público com 500 vagas.
-manip_00036.jpg,manipulated,metrics_change,Museu de Arte Moderna abre exposição gratuita sobre o Modernismo no Brasil.
-manip_00272.jpg,manipulated,visual_quality,Brasil vence a Argentina por 3x0 e garante vaga na final do campeonato. ⚽
-auth_00313.jpg,authentic,none,Pesquisa aponta crescimento do comércio eletrônico no primeiro semestre.
-auth_00212.jpg,authentic,none,O consumo de energia elétrica aumentou 4% em relação ao mesmo período do ano passado.
-manip_00177.jpg,manipulated,metrics_change,Cientistas descobrem nova espécie de orquídea na Mata Atlântica.
-auth_00427.jpg,authentic,none,Trânsito intenso na Avenida Paulista devido a obras de manutenção no asfalto.
-manip_00214.jpg,manipulated,copy_paste,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
-manip_00011.jpg,manipulated,copy_paste,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
-auth_00263.jpg,authentic,none,Festival de cinema premia diretor brasileiro com o Leão de Ouro. 🎬
-manip_00195.jpg,manipulated,metrics_change,Nova atualização do sistema bancário permitirá transferências instantâneas internacionais.
-auth_00309.jpg,authentic,none,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
-manip_00416.jpg,manipulated,icon_insertion,Cientistas descobrem nova espécie de orquídea na Mata Atlântica.
+manip_00051.jpg,manipulated,text_swap,Ministério da Saúde reforça importância de manter carteira de vacinação atualizada.
+manip_00096.jpg,manipulated,copy_paste,Museu de Arte Moderna abre exposição gratuita sobre o Modernismo no Brasil.
+auth_00192.jpg,authentic,none,Lançamento do novo satélite vai melhorar a previsão do tempo no Nordeste.
+auth_00151.jpg,authentic,none,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
+auth_00052.jpg,authentic,none,Lançamento do novo satélite vai melhorar a previsão do tempo no Nordeste.
+auth_00050.jpg,authentic,none,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
+auth_00107.jpg,authentic,none,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
+auth_00196.jpg,authentic,none,"A taxa de desemprego caiu para 8,5% no último trimestre, segundo dados do IBGE."
+manip_00182.jpg,manipulated,visual_quality,Começam hoje as inscrições para o concurso público com 500 vagas.
+manip_00125.jpg,manipulated,text_swap,Começam hoje as inscrições para o concurso público com 500 vagas.
+manip_00123.jpg,manipulated,visual_quality,Cientistas descobrem nova espécie de orquídea na Mata Atlântica.
+manip_00038.jpg,manipulated,visual_quality,Estudo da USP mostra que prática regular de exercícios reduz riscos cardíacos em 30%.
+auth_00021.jpg,authentic,none,O consumo de energia elétrica aumentou 4% em relação ao mesmo período do ano passado.
+auth_00102.jpg,authentic,none,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
+manip_00183.jpg,manipulated,icon_insertion,"A taxa de desemprego caiu para 8,5% no último trimestre, segundo dados do IBGE."
+auth_00054.jpg,authentic,none,Festival de cinema premia diretor brasileiro com o Leão de Ouro. 🎬
+manip_00089.jpg,manipulated,visual_quality,Governo anuncia redução de 5% no imposto para empresas de tecnologia verde.
+manip_00037.jpg,manipulated,jpeg_compression,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
+auth_00193.jpg,authentic,none,Começam hoje as inscrições para o concurso público com 500 vagas.
 auth_00121.jpg,authentic,none,Lançamento do novo satélite vai melhorar a previsão do tempo no Nordeste.
-auth_00201.jpg,authentic,none,Lançamento do novo satélite vai melhorar a previsão do tempo no Nordeste.
-auth_00161.jpg,authentic,none,Estudo da USP mostra que prática regular de exercícios reduz riscos cardíacos em 30%.
-manip_00417.jpg,manipulated,jpeg_compression,Pesquisa aponta crescimento do comércio eletrônico no primeiro semestre.
+auth_00106.jpg,authentic,none,Brasil vence a Argentina por 3x0 e garante vaga na final do campeonato. ⚽
+manip_00138.jpg,manipulated,visual_quality,Ministério da Saúde reforça importância de manter carteira de vacinação atualizada.
+auth_00087.jpg,authentic,none,Nova atualização do sistema bancário permitirá transferências instantâneas internacionais.
+manip_00194.jpg,manipulated,text_swap,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
+manip_00092.jpg,manipulated,visual_quality,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
+manip_00163.jpg,manipulated,copy_paste,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
+auth_00157.jpg,authentic,none,Nova atualização do sistema bancário permitirá transferências instantâneas internacionais.
+auth_00058.jpg,authentic,none,Governo anuncia redução de 5% no imposto para empresas de tecnologia verde.
+manip_00173.jpg,manipulated,jpeg_compression,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
+manip_00159.jpg,manipulated,text_swap,Festival de cinema premia diretor brasileiro com o Leão de Ouro. 🎬
+auth_00116.jpg,authentic,none,Lançamento do novo satélite vai melhorar a previsão do tempo no Nordeste.
+manip_00010.jpg,manipulated,copy_paste,O consumo de energia elétrica aumentou 4% em relação ao mesmo período do ano passado.
+auth_00130.jpg,authentic,none,Receita Federal libera a consulta ao terceiro lote de restituição do Imposto de Renda.
+auth_00020.jpg,authentic,none,"A taxa de desemprego caiu para 8,5% no último trimestre, segundo dados do IBGE."
+manip_00150.jpg,manipulated,copy_paste,Governo anuncia redução de 5% no imposto para empresas de tecnologia verde.
+auth_00099.jpg,authentic,none,"Dólar opera em baixa nesta terça-feira, cotado a R$ 4,95."
+manip_00171.jpg,manipulated,text_swap,Trânsito intenso na Avenida Paulista devido a obras de manutenção no asfalto.
+manip_00147.jpg,manipulated,icon_insertion,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
+auth_00037.jpg,authentic,none,"Dólar opera em baixa nesta terça-feira, cotado a R$ 4,95."
+manip_00128.jpg,manipulated,visual_quality,Começam hoje as inscrições para o concurso público com 500 vagas.
+manip_00097.jpg,manipulated,visual_quality,A campanha de vacinação contra a gripe começa na próxima segunda-feira em todo o país.
+manip_00023.jpg,manipulated,copy_paste,Festival de cinema premia diretor brasileiro com o Leão de Ouro. 🎬
+auth_00092.jpg,authentic,none,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
+manip_00144.jpg,manipulated,icon_insertion,Pesquisa aponta crescimento do comércio eletrônico no primeiro semestre.
+auth_00048.jpg,authentic,none,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
 auth_00134.jpg,authentic,none,Cientistas descobrem nova espécie de orquídea na Mata Atlântica.
-auth_00482.jpg,authentic,none,Receita Federal libera a consulta ao terceiro lote de restituição do Imposto de Renda.
-manip_00104.jpg,manipulated,copy_paste,Estudo da USP mostra que prática regular de exercícios reduz riscos cardíacos em 30%.
-manip_00497.jpg,manipulated,copy_paste,Pesquisa aponta crescimento do comércio eletrônico no primeiro semestre.
-manip_00393.jpg,manipulated,jpeg_compression,Começam hoje as inscrições para o concurso público com 500 vagas.
-manip_00360.jpg,manipulated,icon_insertion,Lançamento do novo satélite vai melhorar a previsão do tempo no Nordeste.
-auth_00214.jpg,authentic,none,A campanha de vacinação contra a gripe começa na próxima segunda-feira em todo o país.
-auth_00235.jpg,authentic,none,Começam hoje as inscrições para o concurso público com 500 vagas.
-auth_00488.jpg,authentic,none,Estudo da USP mostra que prática regular de exercícios reduz riscos cardíacos em 30%.
-manip_00191.jpg,manipulated,metrics_change,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
-manip_00018.jpg,manipulated,visual_quality,O consumo de energia elétrica aumentou 4% em relação ao mesmo período do ano passado.
-auth_00034.jpg,authentic,none,Pesquisa aponta crescimento do comércio eletrônico no primeiro semestre.
-auth_00259.jpg,authentic,none,Festival de cinema premia diretor brasileiro com o Leão de Ouro. 🎬
+auth_00057.jpg,authentic,none,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
+auth_00001.jpg,authentic,none,Brasil vence a Argentina por 3x0 e garante vaga na final do campeonato. ⚽
+auth_00014.jpg,authentic,none,Cientistas descobrem nova espécie de orquídea na Mata Atlântica.
 auth_00160.jpg,authentic,none,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
 auth_00149.jpg,authentic,none,O novo relatório do IPCC alerta para o aumento da temperatura global nos próximos anos. #Clima
-manip_00113.jpg,manipulated,metrics_change,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
-manip_00447.jpg,manipulated,text_swap,"Dólar opera em baixa nesta terça-feira, cotado a R$ 4,95."
-manip_00329.jpg,manipulated,icon_insertion,Museu de Arte Moderna abre exposição gratuita sobre o Modernismo no Brasil.
-manip_00146.jpg,manipulated,icon_insertion,Ministério da Saúde reforça importância de manter carteira de vacinação atualizada.
-auth_00241.jpg,authentic,none,Governo anuncia redução de 5% no imposto para empresas de tecnologia verde.
-auth_00459.jpg,authentic,none,Receita Federal libera a consulta ao terceiro lote de restituição do Imposto de Renda.
-manip_00100.jpg,manipulated,visual_quality,Lançamento do novo satélite vai melhorar a previsão do tempo no Nordeste.
-auth_00295.jpg,authentic,none,Nova atualização do sistema bancário permitirá transferências instantâneas internacionais.
-auth_00257.jpg,authentic,none,Estudo da USP mostra que prática regular de exercícios reduz riscos cardíacos em 30%.
-manip_00263.jpg,manipulated,metrics_change,Estudo da USP mostra que prática regular de exercícios reduz riscos cardíacos em 30%.
-manip_00216.jpg,manipulated,copy_paste,O novo relatório do IPCC alerta para o aumento da temperatura global nos próximos anos. #Clima
-manip_00223.jpg,manipulated,copy_paste,O consumo de energia elétrica aumentou 4% em relação ao mesmo período do ano passado.
-manip_00474.jpg,manipulated,text_swap,A campanha de vacinação contra a gripe começa na próxima segunda-feira em todo o país.
-auth_00080.jpg,authentic,none,Festival de cinema premia diretor brasileiro com o Leão de Ouro. 🎬
-auth_00190.jpg,authentic,none,A campanha de vacinação contra a gripe começa na próxima segunda-feira em todo o país.
-auth_00001.jpg,authentic,none,Brasil vence a Argentina por 3x0 e garante vaga na final do campeonato. ⚽
-auth_00315.jpg,authentic,none,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
-auth_00105.jpg,authentic,none,Nova atualização do sistema bancário permitirá transferências instantâneas internacionais.
-manip_00034.jpg,manipulated,icon_insertion,Começam hoje as inscrições para o concurso público com 500 vagas.
-manip_00452.jpg,manipulated,icon_insertion,Estudo da USP mostra que prática regular de exercícios reduz riscos cardíacos em 30%.
-manip_00368.jpg,manipulated,text_swap,Brasil vence a Argentina por 3x0 e garante vaga na final do campeonato. ⚽
-auth_00387.jpg,authentic,none,Ministério da Saúde reforça importância de manter carteira de vacinação atualizada.
-auth_00013.jpg,authentic,none,A campanha de vacinação contra a gripe começa na próxima segunda-feira em todo o país.
-manip_00032.jpg,manipulated,icon_insertion,Governo anuncia redução de 5% no imposto para empresas de tecnologia verde.
-manip_00444.jpg,manipulated,icon_insertion,"Dólar opera em baixa nesta terça-feira, cotado a R$ 4,95."
-auth_00473.jpg,authentic,none,A campanha de vacinação contra a gripe começa na próxima segunda-feira em todo o país.
-manip_00035.jpg,manipulated,icon_insertion,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
-auth_00252.jpg,authentic,none,Estudo da USP mostra que prática regular de exercícios reduz riscos cardíacos em 30%.
-manip_00475.jpg,manipulated,visual_quality,O novo relatório do IPCC alerta para o aumento da temperatura global nos próximos anos. #Clima
-auth_00348.jpg,authentic,none,O consumo de energia elétrica aumentou 4% em relação ao mesmo período do ano passado.
-auth_00345.jpg,authentic,none,Lançamento do novo satélite vai melhorar a previsão do tempo no Nordeste.
-manip_00441.jpg,manipulated,jpeg_compression,O novo relatório do IPCC alerta para o aumento da temperatura global nos próximos anos. #Clima
-manip_00419.jpg,manipulated,icon_insertion,Pesquisa aponta crescimento do comércio eletrônico no primeiro semestre.
-manip_00390.jpg,manipulated,copy_paste,O consumo de energia elétrica aumentou 4% em relação ao mesmo período do ano passado.
-auth_00319.jpg,authentic,none,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
-manip_00256.jpg,manipulated,visual_quality,Receita Federal libera a consulta ao terceiro lote de restituição do Imposto de Renda.
-auth_00187.jpg,authentic,none,O novo relatório do IPCC alerta para o aumento da temperatura global nos próximos anos. #Clima
-manip_00278.jpg,manipulated,metrics_change,Museu de Arte Moderna abre exposição gratuita sobre o Modernismo no Brasil.
-manip_00061.jpg,manipulated,metrics_change,Receita Federal libera a consulta ao terceiro lote de restituição do Imposto de Renda.
-manip_00064.jpg,manipulated,jpeg_compression,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
-auth_00251.jpg,authentic,none,A campanha de vacinação contra a gripe começa na próxima segunda-feira em todo o país.
-manip_00248.jpg,manipulated,metrics_change,O novo relatório do IPCC alerta para o aumento da temperatura global nos próximos anos. #Clima
-auth_00389.jpg,authentic,none,Ministério da Saúde reforça importância de manter carteira de vacinação atualizada.
-auth_00049.jpg,authentic,none,Brasil vence a Argentina por 3x0 e garante vaga na final do campeonato. ⚽
-manip_00395.jpg,manipulated,copy_paste,Estudo da USP mostra que prática regular de exercícios reduz riscos cardíacos em 30%.
-manip_00178.jpg,manipulated,copy_paste,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
-auth_00366.jpg,authentic,none,A campanha de vacinação contra a gripe começa na próxima segunda-feira em todo o país.
-auth_00372.jpg,authentic,none,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
-auth_00188.jpg,authentic,none,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
-manip_00339.jpg,manipulated,jpeg_compression,Ministério da Saúde reforça importância de manter carteira de vacinação atualizada.
-auth_00413.jpg,authentic,none,Pesquisa aponta crescimento do comércio eletrônico no primeiro semestre.
-manip_00284.jpg,manipulated,copy_paste,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
-auth_00270.jpg,authentic,none,Pesquisa aponta crescimento do comércio eletrônico no primeiro semestre.
-auth_00308.jpg,authentic,none,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
-auth_00048.jpg,authentic,none,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
-auth_00050.jpg,authentic,none,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
-auth_00020.jpg,authentic,none,"A taxa de desemprego caiu para 8,5% no último trimestre, segundo dados do IBGE."
-auth_00052.jpg,authentic,none,Lançamento do novo satélite vai melhorar a previsão do tempo no Nordeste.
-auth_00496.jpg,authentic,none,Cientistas descobrem nova espécie de orquídea na Mata Atlântica.
-manip_00413.jpg,manipulated,visual_quality,Museu de Arte Moderna abre exposição gratuita sobre o Modernismo no Brasil.
-auth_00174.jpg,authentic,none,A campanha de vacinação contra a gripe começa na próxima segunda-feira em todo o país.
-auth_00106.jpg,authentic,none,Brasil vence a Argentina por 3x0 e garante vaga na final do campeonato. ⚽
-auth_00264.jpg,authentic,none,"A taxa de desemprego caiu para 8,5% no último trimestre, segundo dados do IBGE."
-auth_00151.jpg,authentic,none,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
-auth_00166.jpg,authentic,none,Ministério da Saúde reforça importância de manter carteira de vacinação atualizada.
-auth_00243.jpg,authentic,none,O consumo de energia elétrica aumentou 4% em relação ao mesmo período do ano passado.
-auth_00091.jpg,authentic,none,O novo relatório do IPCC alerta para o aumento da temperatura global nos próximos anos. #Clima
-auth_00363.jpg,authentic,none,A campanha de vacinação contra a gripe começa na próxima segunda-feira em todo o país.
-manip_00159.jpg,manipulated,visual_quality,O consumo de energia elétrica aumentou 4% em relação ao mesmo período do ano passado.
-manip_00276.jpg,manipulated,icon_insertion,Pesquisa aponta crescimento do comércio eletrônico no primeiro semestre.
-auth_00102.jpg,authentic,none,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
-auth_00456.jpg,authentic,none,Ministério da Saúde reforça importância de manter carteira de vacinação atualizada.
-manip_00257.jpg,manipulated,visual_quality,O consumo de energia elétrica aumentou 4% em relação ao mesmo período do ano passado.
-auth_00328.jpg,authentic,none,Brasil vence a Argentina por 3x0 e garante vaga na final do campeonato. ⚽
-auth_00419.jpg,authentic,none,Cientistas descobrem nova espécie de orquídea na Mata Atlântica.
-manip_00074.jpg,manipulated,text_swap,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
-manip_00092.jpg,manipulated,jpeg_compression,A campanha de vacinação contra a gripe começa na próxima segunda-feira em todo o país.
-auth_00458.jpg,authentic,none,Nova atualização do sistema bancário permitirá transferências instantâneas internacionais.
-auth_00043.jpg,authentic,none,Museu de Arte Moderna abre exposição gratuita sobre o Modernismo no Brasil.
-auth_00401.jpg,authentic,none,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
-manip_00383.jpg,manipulated,text_swap,Brasil vence a Argentina por 3x0 e garante vaga na final do campeonato. ⚽
-manip_00246.jpg,manipulated,copy_paste,Estudo da USP mostra que prática regular de exercícios reduz riscos cardíacos em 30%.
-manip_00241.jpg,manipulated,metrics_change,Museu de Arte Moderna abre exposição gratuita sobre o Modernismo no Brasil.
-auth_00457.jpg,authentic,none,Trânsito intenso na Avenida Paulista devido a obras de manutenção no asfalto.
-manip_00043.jpg,manipulated,metrics_change,Pesquisa aponta crescimento do comércio eletrônico no primeiro semestre.
-manip_00324.jpg,manipulated,visual_quality,Receita Federal libera a consulta ao terceiro lote de restituição do Imposto de Renda.
-auth_00441.jpg,authentic,none,Pesquisa aponta crescimento do comércio eletrônico no primeiro semestre.
-auth_00189.jpg,authentic,none,Governo anuncia redução de 5% no imposto para empresas de tecnologia verde.
-manip_00162.jpg,manipulated,visual_quality,Cientistas descobrem nova espécie de orquídea na Mata Atlântica.
-manip_00356.jpg,manipulated,metrics_change,Museu de Arte Moderna abre exposição gratuita sobre o Modernismo no Brasil.
-manip_00167.jpg,manipulated,visual_quality,Festival de cinema premia diretor brasileiro com o Leão de Ouro. 🎬
-auth_00303.jpg,authentic,none,Receita Federal libera a consulta ao terceiro lote de restituição do Imposto de Renda.
-manip_00098.jpg,manipulated,text_swap,"Dólar opera em baixa nesta terça-feira, cotado a R$ 4,95."
-manip_00285.jpg,manipulated,jpeg_compression,Museu de Arte Moderna abre exposição gratuita sobre o Modernismo no Brasil.
-manip_00476.jpg,manipulated,icon_insertion,Governo anuncia redução de 5% no imposto para empresas de tecnologia verde.
-auth_00099.jpg,authentic,none,"Dólar opera em baixa nesta terça-feira, cotado a R$ 4,95."
-auth_00058.jpg,authentic,none,Governo anuncia redução de 5% no imposto para empresas de tecnologia verde.
-auth_00499.jpg,authentic,none,Pesquisa aponta crescimento do comércio eletrônico no primeiro semestre.
-auth_00443.jpg,authentic,none,Nova atualização do sistema bancário permitirá transferências instantâneas internacionais.
-auth_00350.jpg,authentic,none,A campanha de vacinação contra a gripe começa na próxima segunda-feira em todo o país.
-manip_00436.jpg,manipulated,jpeg_compression,Pesquisa aponta crescimento do comércio eletrônico no primeiro semestre.
+manip_00127.jpg,manipulated,jpeg_compression,Governo anuncia redução de 5% no imposto para empresas de tecnologia verde.
+manip_00160.jpg,manipulated,jpeg_compression,Nova atualização do sistema bancário permitirá transferências instantâneas internacionais.
+manip_00146.jpg,manipulated,visual_quality,Festival de cinema premia diretor brasileiro com o Leão de Ouro. 🎬
+manip_00002.jpg,manipulated,metrics_change,Lançamento do novo satélite vai melhorar a previsão do tempo no Nordeste.
+auth_00074.jpg,authentic,none,Lançamento do novo satélite vai melhorar a previsão do tempo no Nordeste.
+auth_00063.jpg,authentic,none,Ministério da Saúde reforça importância de manter carteira de vacinação atualizada.
+manip_00103.jpg,manipulated,icon_insertion,O novo relatório do IPCC alerta para o aumento da temperatura global nos próximos anos. #Clima
+manip_00068.jpg,manipulated,visual_quality,"Dólar opera em baixa nesta terça-feira, cotado a R$ 4,95."
+manip_00052.jpg,manipulated,metrics_change,Receita Federal libera a consulta ao terceiro lote de restituição do Imposto de Renda.
 auth_00088.jpg,authentic,none,"A taxa de desemprego caiu para 8,5% no último trimestre, segundo dados do IBGE."
-manip_00301.jpg,manipulated,metrics_change,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
-manip_00279.jpg,manipulated,copy_paste,Museu de Arte Moderna abre exposição gratuita sobre o Modernismo no Brasil.
-auth_00191.jpg,authentic,none,Receita Federal libera a consulta ao terceiro lote de restituição do Imposto de Renda.
-auth_00486.jpg,authentic,none,Lançamento do novo satélite vai melhorar a previsão do tempo no Nordeste.
-auth_00269.jpg,authentic,none,Pesquisa aponta crescimento do comércio eletrônico no primeiro semestre.
-manip_00163.jpg,manipulated,copy_paste,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
-manip_00150.jpg,manipulated,jpeg_compression,Cientistas descobrem nova espécie de orquídea na Mata Atlântica.
-auth_00169.jpg,authentic,none,Ministério da Saúde reforça importância de manter carteira de vacinação atualizada.
-manip_00341.jpg,manipulated,metrics_change,Receita Federal libera a consulta ao terceiro lote de restituição do Imposto de Renda.
-auth_00480.jpg,authentic,none,Pesquisa aponta crescimento do comércio eletrônico no primeiro semestre.
-manip_00267.jpg,manipulated,metrics_change,Museu de Arte Moderna abre exposição gratuita sobre o Modernismo no Brasil.
-manip_00471.jpg,manipulated,icon_insertion,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
-manip_00367.jpg,manipulated,text_swap,"Dólar opera em baixa nesta terça-feira, cotado a R$ 4,95."
-manip_00313.jpg,manipulated,copy_paste,"Bolsa de Valores fecha em alta de 1,2% puxada pelo setor de commodities."
-manip_00189.jpg,manipulated,copy_paste,O novo relatório do IPCC alerta para o aumento da temperatura global nos próximos anos. #Clima
-manip_00426.jpg,manipulated,icon_insertion,"Dólar opera em baixa nesta terça-feira, cotado a R$ 4,95."
-auth_00466.jpg,authentic,none,Receita Federal libera a consulta ao terceiro lote de restituição do Imposto de Renda.
-manip_00003.jpg,manipulated,visual_quality,Pesquisa aponta crescimento do comércio eletrônico no primeiro semestre.
-manip_00042.jpg,manipulated,text_swap,Trânsito intenso na Avenida Paulista devido a obras de manutenção no asfalto.
-manip_00462.jpg,manipulated,text_swap,"Dólar opera em baixa nesta terça-feira, cotado a R$ 4,95."
-manip_00409.jpg,manipulated,metrics_change,"A taxa de desemprego caiu para 8,5% no último trimestre, segundo dados do IBGE."
-manip_00336.jpg,manipulated,visual_quality,Trânsito intenso na Avenida Paulista devido a obras de manutenção no asfalto.
-manip_00012.jpg,manipulated,visual_quality,Começam hoje as inscrições para o concurso público com 500 vagas.
-auth_00343.jpg,authentic,none,Nova atualização do sistema bancário permitirá transferências instantâneas internacionais.
-manip_00094.jpg,manipulated,metrics_change,Receita Federal libera a consulta ao terceiro lote de restituição do Imposto de Renda.
-manip_00252.jpg,manipulated,icon_insertion,Receita Federal libera a consulta ao terceiro lote de restituição do Imposto de Renda.
+manip_00095.jpg,manipulated,text_swap,Ministério da Saúde reforça importância de manter carteira de vacinação atualizada.
+manip_00069.jpg,manipulated,visual_quality,Receita Federal libera a consulta ao terceiro lote de restituição do Imposto de Renda.
+auth_00167.jpg,authentic,none,Ministério da Saúde reforça importância de manter carteira de vacinação atualizada.
+manip_00199.jpg,manipulated,metrics_change,Museu de Arte Moderna abre exposição gratuita sobre o Modernismo no Brasil.
+manip_00122.jpg,manipulated,text_swap,A campanha de vacinação contra a gripe começa na próxima segunda-feira em todo o país.
+auth_00103.jpg,authentic,none,Cientistas descobrem nova espécie de orquídea na Mata Atlântica.
+auth_00179.jpg,authentic,none,Brasil vence a Argentina por 3x0 e garante vaga na final do campeonato. ⚽
+auth_00188.jpg,authentic,none,Prefeitura inaugura 5 novas creches na zona leste da cidade hoje.
+auth_00199.jpg,authentic,none,Governo anuncia redução de 5% no imposto para empresas de tecnologia verde.
+manip_00115.jpg,manipulated,text_swap,Receita Federal libera a consulta ao terceiro lote de restituição do Imposto de Renda.
+manip_00143.jpg,manipulated,copy_paste,Trânsito intenso na Avenida Paulista devido a obras de manutenção no asfalto.
+auth_00183.jpg,authentic,none,Lançamento do novo satélite vai melhorar a previsão do tempo no Nordeste.
+manip_00081.jpg,manipulated,metrics_change,"Dólar opera em baixa nesta terça-feira, cotado a R$ 4,95."
+manip_00175.jpg,manipulated,visual_quality,Cientistas descobrem nova espécie de orquídea na Mata Atlântica.
+auth_00175.jpg,authentic,none,Trânsito intenso na Avenida Paulista devido a obras de manutenção no asfalto.
+manip_00067.jpg,manipulated,icon_insertion,Governo anuncia redução de 5% no imposto para empresas de tecnologia verde.
+manip_00129.jpg,manipulated,icon_insertion,Cientistas descobrem nova espécie de orquídea na Mata Atlântica.
+auth_00129.jpg,authentic,none,Festival de cinema premia diretor brasileiro com o Leão de Ouro. 🎬

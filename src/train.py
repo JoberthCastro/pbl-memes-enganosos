@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import numpy as np
 import torch
 from torch.utils.data import DataLoader
 from sklearn.model_selection import train_test_split
@@ -36,6 +37,32 @@ def train(num_epochs: int = 3, batch_size: int = 4, lr: float = 1e-4, dropout_ra
         )
 
     df = pd.read_csv(CSV_PATH)
+    
+    # Calcular class weights para balanceamento (estratégia agressiva)
+    # Força o modelo a dar mais importância à classe minoritária
+    label_counts = df['label'].value_counts()
+    total = len(df)
+    
+    count_authentic = label_counts.get('authentic', 1)
+    count_manipulated = label_counts.get('manipulated', 1)
+    
+    # Calcular pesos: Manipulated recebe peso maior para evitar colapso
+    # Estratégia: peso inversamente proporcional + boost para classe minoritária
+    weight_authentic = total / (2 * count_authentic)
+    weight_manipulated = total / (2 * count_manipulated)
+    
+    # Aplicar boost adicional para classe manipulada (mais difícil de detectar)
+    # Isso força o modelo a aprender diferenças mais claras
+    weight_manipulated = weight_manipulated * 2.0  # Boost de 2x
+    
+    class_weights = torch.tensor([
+        weight_authentic,   # Peso para classe 0 (authentic)
+        weight_manipulated  # Peso para classe 1 (manipulated) - com boost
+    ], dtype=torch.float32)
+    
+    print(f"📊 Distribuição de classes: {dict(label_counts)}")
+    print(f"⚖️  Class weights: Authentic={class_weights[0]:.2f}, Manipulated={class_weights[1]:.2f}")
+    print(f"   (Manipulated tem peso 2x maior para evitar colapso de probabilidades)")
     
     # Separação Treino / Teste (80% / 20%)
     print("✂ Separando dados de Treino e Teste...")
@@ -101,7 +128,8 @@ def train(num_epochs: int = 3, batch_size: int = 4, lr: float = 1e-4, dropout_ra
         weight_decay=1e-4  # L2 Regularization
     )
 
-    loss_fn = torch.nn.CrossEntropyLoss()
+    # Loss function com class weights para balancear as classes
+    loss_fn = torch.nn.CrossEntropyLoss(weight=class_weights.to(device))
 
     print("🚀 Iniciando treinamento...\n")
 
@@ -140,7 +168,39 @@ def train(num_epochs: int = 3, batch_size: int = 4, lr: float = 1e-4, dropout_ra
             correct += (preds == labels).sum().item()
 
         acc = correct / total * 100
+        
+        # Calcular métricas por classe
+        with torch.no_grad():
+            all_preds = []
+            all_labels = []
+            for images, tokens, labels in dataloader:
+                images = images.to(device)
+                tokens = tokens.to(device)
+                labels = labels.to(device)
+                
+                v_emb = visual(images)
+                t_emb = text_model(tokens)
+                ocr_stats = torch.zeros(images.size(0), 3, device=device)
+                logits = fusion(v_emb, t_emb, ocr_stats)
+                preds = logits.argmax(dim=1)
+                all_preds.extend(preds.cpu().numpy())
+                all_labels.extend(labels.cpu().numpy())
+            
+            # Calcular precisão por classe
+            from sklearn.metrics import classification_report
+            all_preds = np.array(all_preds)
+            all_labels = np.array(all_labels)
+            
+            authentic_correct = ((all_labels == 0) & (all_preds == 0)).sum()
+            authentic_total = (all_labels == 0).sum()
+            manipulated_correct = ((all_labels == 1) & (all_preds == 1)).sum()
+            manipulated_total = (all_labels == 1).sum()
+            
+            authentic_acc = (authentic_correct / authentic_total * 100) if authentic_total > 0 else 0
+            manipulated_acc = (manipulated_correct / manipulated_total * 100) if manipulated_total > 0 else 0
+        
         print(f"📌 Época {epoch+1}/{num_epochs} — Loss: {epoch_loss:.4f} | Acc: {acc:.2f}%")
+        print(f"   Authentic: {authentic_acc:.1f}% ({authentic_correct}/{authentic_total}) | Manipulated: {manipulated_acc:.1f}% ({manipulated_correct}/{manipulated_total})")
 
     print("\n💾 Salvando pesos...")
     torch.save(visual.state_dict(), os.path.join(MODEL_DIR, "visual_model.pth"))

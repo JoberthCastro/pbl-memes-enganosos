@@ -100,13 +100,15 @@ def run_inference(image: Image.Image, platform: str = "unknown"):
     t_ocr = torch.tensor([ocr_stats], dtype=torch.float32).to(DEVICE)
 
     # Predição do Modelo Fusion (PyTorch)
+    # Aplicar threshold ótimo (0.70) para melhor balanceamento
+    # Threshold atualizado após retreino com mais dados
+    OPTIMAL_THRESHOLD = 0.70
     with torch.no_grad():
         logits = fusion(t_v_emb, t_t_emb, t_ocr)
         probs = torch.softmax(logits, dim=1)
-        score, pred_idx = torch.max(probs, 1)
-
-    fusion_label_idx = pred_idx.item()
-    fusion_score = float(score.item())
+        prob_manipulated = probs[0, 1].item()
+        fusion_label_idx = 1 if prob_manipulated >= OPTIMAL_THRESHOLD else 0
+        fusion_score = float(prob_manipulated if fusion_label_idx == 1 else (1 - prob_manipulated))
     
     # LLM Análise
     llm_meta = {
