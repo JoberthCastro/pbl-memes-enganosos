@@ -7,8 +7,8 @@ import numpy as np
 import os
 from tqdm import tqdm
 
-# Import local sem prefixo de pacote para funcionar com `python src/train.py`
-from preprocessing import get_transforms
+# Import usando o pacote `src` para funcionar com `python -m src.train`
+from src.preprocessing import get_transforms
 
 class VisualExtractor(nn.Module):
     def __init__(self, model_name='mobilenet_v2', pretrained=True):

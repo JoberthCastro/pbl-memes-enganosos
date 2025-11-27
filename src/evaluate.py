@@ -31,23 +31,35 @@ def evaluate(dataset_dir, model_path, output_dir='reports', device='cpu'):
     visual_ext = VisualExtractor(model_name='mobilenet_v2')
     visual_ext.to(device)
     visual_ext.eval()
-    
+
+    # Opcional: carregar pesos treinados do modelo visual, se existirem
+    visual_ckpt = "models/visual_model.pth"
+    if os.path.exists(visual_ckpt):
+        visual_ext.load_state_dict(torch.load(visual_ckpt, map_location=device))
+
     # Text
-    tokenizer = Tokenizer(num_words=10000) 
+    tokenizer = Tokenizer(num_words=10000)
     # Em prod, carregar tokenizer treinado: Tokenizer.load('data/tokenizer.pkl')
-    
+
     text_model = TextModel(vocab_size=10001, embedding_dim=128, hidden_dim=128)
     text_model.to(device)
     text_model.eval()
-    
-    # Fusion
+
+    text_ckpt = "models/text_model.pth"
+    if os.path.exists(text_ckpt):
+        try:
+            text_model.load_state_dict(torch.load(text_ckpt, map_location=device))
+        except RuntimeError as e:
+            print(f"Warning: could not load text_model checkpoint due to size mismatch: {e}")
+
+    # Fusion (usa embeddings pré-calculados, como em train.py)
     config = {'num_classes': 2, 'text_output_dim': 256}
-    model = FusionModel(config, visual_extractor=visual_ext, text_model=text_model)
+    model = FusionModel(config)  # use_precomputed_embeddings = True
     if os.path.exists(model_path):
         model.load_state_dict(torch.load(model_path, map_location=device))
     else:
         print(f"Warning: Model checkpoint not found at {model_path}. Using random weights.")
-    
+
     model.to(device)
     model.eval()
     
@@ -90,27 +102,35 @@ def evaluate(dataset_dir, model_path, output_dir='reports', device='cpu'):
             ocr_mean_conf = ocr_res['stats']['mean_conf']
             
             # Features
-            # Visual
+            # Visual -> embedding
             img_t = transform(img).unsqueeze(0).to(device)
-            
-            # Text
+            with torch.no_grad():
+                v_emb = visual_ext(img_t)
+
+            # Text -> embedding
             seqs = tokenizer.texts_to_sequences([text])
             tokens = seqs[0] if seqs else []
-            if len(tokens) < 100: tokens += [0]*(100-len(tokens))
-            else: tokens = tokens[:100]
+            if len(tokens) < 100:
+                tokens += [0] * (100 - len(tokens))
+            else:
+                tokens = tokens[:100]
+            # shape [1, max_len] para Embedding/LSTM (batch_first)
             text_t = torch.tensor([tokens], dtype=torch.long).to(device)
-            
+            with torch.no_grad():
+                t_emb = text_model(text_t)
+
             # OCR Stats
             ocr_stats_vec = [
-                ocr_res['stats']['mean_conf'], 
-                ocr_res['stats']['std_conf'], 
+                ocr_res['stats']['mean_conf'],
+                ocr_res['stats']['std_conf'],
                 len([w for w in ocr_res['words'] if w['conf'] < 50])
             ]
+            # shape [1, 3] para Linear/BatchNorm1d
             ocr_t = torch.tensor([ocr_stats_vec], dtype=torch.float32).to(device)
-            
-            # Predict
+
+            # Predict (fusão em cima dos embeddings)
             with torch.no_grad():
-                logits = model(img_t, text_t, ocr_t)
+                logits = model(v_emb, t_emb, ocr_t)
                 probs = torch.softmax(logits, dim=1)
                 score, pred_idx = torch.max(probs, 1)
                 
@@ -160,25 +180,37 @@ def evaluate(dataset_dir, model_path, output_dir='reports', device='cpu'):
         json.dump(metrics, f, indent=4)
         
     # --- 5. Plots ---
+    # Só gera gráficos se houver dados suficientes
+    if cm.size > 0:
+        # Confusion Matrix
+        plt.figure(figsize=(6, 5))
+        sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=['Auth', 'Fake'], yticklabels=['Auth', 'Fake'])
+        plt.title("Confusion Matrix")
+        plt.ylabel("True Label")
+        plt.xlabel("Predicted Label")
+        plt.savefig(os.path.join(output_dir, "confusion_matrix.png"))
+        plt.close()
+    else:
+        print("Confusion matrix vazia, pulando plot de matriz de confusão.")
     
-    # Confusion Matrix
-    plt.figure(figsize=(6, 5))
-    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=['Auth', 'Fake'], yticklabels=['Auth', 'Fake'])
-    plt.title("Confusion Matrix")
-    plt.ylabel("True Label")
-    plt.xlabel("Predicted Label")
-    plt.savefig(os.path.join(output_dir, "confusion_matrix.png"))
-    plt.close()
-    
-    # Confidence Histogram
-    plt.figure(figsize=(8, 5))
-    sns.histplot(data=df, x='probability', hue='true_label', bins=20, kde=True)
-    plt.title("Model Confidence Distribution")
-    plt.xlabel("Confidence Score")
-    plt.savefig(os.path.join(output_dir, "confidence_dist.png"))
-    plt.close()
+    if not df.empty:
+        # Confidence Histogram
+        plt.figure(figsize=(8, 5))
+        sns.histplot(data=df, x='probability', hue='true_label', bins=20, kde=True)
+        plt.title("Model Confidence Distribution")
+        plt.xlabel("Confidence Score")
+        plt.savefig(os.path.join(output_dir, "confidence_dist.png"))
+        plt.close()
+    else:
+        print("DataFrame de resultados vazio, pulando histograma de confiança.")
     
     # --- 6. Markdown Report ---
+    # Evitar erro se y_true/y_pred estiverem vazios
+    if len(y_true) > 0:
+        cls_report = classification_report(y_true, y_pred, target_names=['Authentic', 'Manipulated'])
+    else:
+        cls_report = "No valid samples were evaluated (check OCR/Text pipeline and dataset)."
+
     report_md = f"""
 # Evaluation Report
 
@@ -197,7 +229,7 @@ def evaluate(dataset_dir, model_path, output_dir='reports', device='cpu'):
 
 ## Classification Report
 ```
-{classification_report(y_true, y_pred, target_names=['Authentic', 'Manipulated'])}
+{cls_report}
 ```
     """
     

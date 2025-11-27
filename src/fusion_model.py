@@ -3,9 +3,9 @@ import torch.nn as nn
 import torch.optim as optim
 import os
 
-# Imports locais sem prefixo de pacote, para funcionar com `python src/train.py`
-from visual_extractor import VisualExtractor  # noqa: F401  (pode ser usado em modo end-to-end)
-from text_model import TextModel  # noqa: F401
+# Imports via pacote `src` para funcionar com `python -m src.train`
+from src.visual_extractor import VisualExtractor  # noqa: F401  (pode ser usado em modo end-to-end)
+from src.text_model import TextModel  # noqa: F401
 
 class FusionModel(nn.Module):
     def __init__(self, config, visual_extractor=None, text_model=None):

@@ -11,6 +11,7 @@ import numpy as np
 from PIL import Image
 import io
 import json
+import cv2
 
 # Add root to path
 sys.path.append(os.path.join(os.path.dirname(__file__), '../../'))
@@ -67,11 +68,13 @@ def load_models():
     text_model.to(DEVICE)
     text_model.eval()
     MODELS['text'] = text_model
-    
-    # 3. Fusion
+
+    # 3. Fusion (usa embeddings pré-calculados como em train.py/evaluate.py)
     config = {'num_classes': 2, 'text_output_dim': 256}
-    # Pass submodels for GradCAM access if needed, or just use them separately
-    fusion_model = FusionModel(config, visual_extractor=visual_ext, text_model=text_model)
+    fusion_model = FusionModel(config)  # use_precomputed_embeddings = True
+    fusion_ckpt = "models/fusion_model.pth"
+    if os.path.exists(fusion_ckpt):
+        fusion_model.load_state_dict(torch.load(fusion_ckpt, map_location=DEVICE))
     fusion_model.to(DEVICE)
     fusion_model.eval()
     MODELS['fusion'] = fusion_model
