@@ -17,3 +17,4 @@ matplotlib
 opencv-python-headless
 python-pptx
 seaborn
+streamlit

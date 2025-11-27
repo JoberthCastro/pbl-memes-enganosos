@@ -11,13 +11,14 @@ from tqdm import tqdm
 from src.preprocessing import get_transforms
 
 class VisualExtractor(nn.Module):
-    def __init__(self, model_name='mobilenet_v2', pretrained=True):
+    def __init__(self, model_name='mobilenet_v2', pretrained=True, freeze_backbone=False):
         """
         Extrai features visuais usando MobileNetV2 ou EfficientNetB0.
         
         Args:
             model_name: 'mobilenet_v2' ou 'efficientnet_b0'
             pretrained: Se deve usar pesos do ImageNet
+            freeze_backbone: Se True, congela os pesos da rede (não treina), agindo apenas como extrator.
         """
         super(VisualExtractor, self).__init__()
         
@@ -39,6 +40,11 @@ class VisualExtractor(nn.Module):
             
         else:
             raise ValueError(f"Model {model_name} not supported")
+
+        # FREEZING (Crucial para transfer learning com poucos dados)
+        if freeze_backbone:
+            for param in self.features.parameters():
+                param.requires_grad = False
 
         self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
 

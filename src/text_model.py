@@ -14,8 +14,9 @@ class Tokenizer:
         self.num_words = num_words
         self.lower = lower
         self.oov_token = oov_token
-        self.word_index = {}
-        self.index_word = {}
+        # Inicializa já com o token OOV para evitar KeyError
+        self.word_index = {self.oov_token: 1}
+        self.index_word = {1: self.oov_token}
         self.word_counts = Counter()
         
     def fit_on_texts(self, texts):

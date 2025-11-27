@@ -4,15 +4,27 @@ import numpy as np
 import torchvision.transforms as transforms
 from pathlib import Path
 
-# --- Existing Code Preserved ---
+# --- Updated Data Augmentation ---
 def get_transforms(mode='train'):
     if mode == 'train':
         return transforms.Compose([
             transforms.Resize((224, 224)),
-            transforms.RandomHorizontalFlip(),
-            transforms.ColorJitter(brightness=0.1, contrast=0.1),
+            # Removed HorizontalFlip because it mirrors text, making it unreadable/unnatural for OCR-like tasks
+            # transforms.RandomHorizontalFlip(), 
+            
+            # Geometric distortions (simulate bad screenshots/photos)
+            transforms.RandomRotation(degrees=5),
+            transforms.RandomPerspective(distortion_scale=0.2, p=0.3),
+            
+            # Visual distortions (simulate compression/lighting)
+            transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.05),
+            transforms.RandomGrayscale(p=0.1),
+            transforms.GaussianBlur(kernel_size=3, sigma=(0.1, 2.0)),
+            
             transforms.ToTensor(),
-            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+            
+            # Add noise (optional, custom lambda if needed, but GaussianBlur helps)
         ])
     else:
         return transforms.Compose([
@@ -21,7 +33,7 @@ def get_transforms(mode='train'):
             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
         ])
 
-# --- New Preprocessing Functions ---
+# --- Existing Helpers Preserved ---
 
 def normalize_intensity(img):
     """

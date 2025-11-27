@@ -16,7 +16,7 @@ load_dotenv()
 logger = logging.getLogger(__name__)
 
 class LLMIntegration:
-    def __init__(self, api_key=None, model_name="gemini-pro", mock_mode=False):
+    def __init__(self, api_key=None, model_name="models/gemini-flash-latest", mock_mode=False):
         """
         Módulo de integração com LLM para validação semântica de memes.
         
@@ -39,6 +39,7 @@ class LLMIntegration:
                     self.mock_mode = True
                 else:
                     genai.configure(api_key=key)
+                    # Modelos recomendados (v1): 'gemini-1.5-flash', 'gemini-1.5-pro'
                     self.model = genai.GenerativeModel(model_name)
 
     def construct_prompt(self, text_extracted, metadata=None):
@@ -59,20 +60,23 @@ Sua tarefa é analisar o conteúdo extraído de uma imagem (possível meme ou pr
 - **Métricas Visíveis:** {metrics}
 - **Indícios Visuais:** {", ".join(visual_cues)}
 
-**Instruções de Análise:**
-1. Verifique a coerência interna do texto.
-2. Analise se o estilo de linguagem condiz com a plataforma esperada.
-3. Identifique frases sensacionalistas, erros gramaticais suspeitos ou formatação atípica.
-4. Se houver métricas (likes/shares), verifique se são plausíveis (ex: "999 trilhões de likes" é suspeito).
-5. Detecte discurso de ódio, promessas financeiras irreais ou teorias da conspiração óbvias.
+**Instruções CRUCIAIS:**
+1. **IGNORE ERROS DE OCR:** O texto foi extraído automaticamente de uma imagem de baixa qualidade. Erros como 'Satide' (Saúde), 'reforga' (reforça), 'vacinagao' (vacinação) ou caracteres estranhos são artefatos técnicos, NÃO prova de fraude. NÃO mencione esses erros como suspeitas.
+2. **FOQUE NA MENTIRA:** Só classifique como 'suspeito' se a **informação** transmitida for falsa, enganosa, alarmista ou impossível (ex: 'Vacina causa autismo', 'Terra é plana', '999 trilhões de likes').
+3. **CONTEXTO:** Se o texto for uma notícia plausível (ex: campanha de vacinação, obra em ponte, resultado de jogo), classifique como 'autêntico', mesmo que a formatação esteja feia.
+4. **FONTES:** Nomes de jornais genéricos (ex: 'Jornal_Real_10') são comuns em datasets sintéticos de teste. Não use o nome da fonte como único critério para suspeita, a menos que imite um jornal famoso para enganar.
+
+**Decisão:**
+- Se a mensagem for uma verdade aceita ou notícia plausível -> 'autêntico'.
+- Se a mensagem for absurda, teoria da conspiração ou golpe -> 'suspeito'.
 
 **Formato de Saída Obrigatório (JSON):**
 Retorne APENAS um objeto JSON válido (sem markdown ```json ... ```) com os seguintes campos:
 {{
     "label": "suspeito" ou "autêntico",
     "score": <float entre 0.0 e 1.0, onde 1.0 é certeza absoluta de manipulação>,
-    "issues": ["lista", "de", "problemas", "encontrados"],
-    "explanation": "Breve justificativa da decisão."
+    "issues": ["lista", "de", "problemas", "SEMÂNTICOS", "encontrados"],
+    "explanation": "Breve justificativa focada no conteúdo da mensagem."
 }}
 """
         return prompt.strip()

@@ -6,6 +6,20 @@ import argparse
 import os
 from pathlib import Path
 
+# --------------------------------------------------------------------------------------
+# Configuração automática do caminho do executável do Tesseract no Windows
+# --------------------------------------------------------------------------------------
+# Se o Tesseract estiver instalado no caminho padrão (C:\Program Files\Tesseract-OCR),
+# este bloco configura o pytesseract para usá-lo automaticamente.
+#
+# Caso esteja em outro lugar, você pode ajustar a variável `TESSERACT_WINDOWS_PATH`
+# abaixo para o caminho correto do seu tesseract.exe.
+TESSERACT_WINDOWS_PATH = r"C:\Users\jober\Desktop\tesseract\tesseract.exe"
+if os.name == "nt":
+    # Define o caminho explicitamente; se estiver diferente na sua máquina,
+    # basta ajustar a string acima.
+    pytesseract.pytesseract.tesseract_cmd = TESSERACT_WINDOWS_PATH
+
 # Configuração padrão do Tesseract
 # --psm 6: Assume um único bloco de texto uniforme.
 # --oem 3: Default engine mode.
