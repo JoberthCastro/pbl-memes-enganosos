@@ -144,11 +144,13 @@ async def infer(
             label = "Enganoso/Suspeito" if pred_idx == 1 else "Autêntico"
             score_val = float(prob_manipulated if pred_idx == 1 else (1 - prob_manipulated))
             
-        # 5. LLM Verification
+        # 5. LLM Verification — passa também a predição do modelo treinado
         llm_meta = {
             "platform": platform,
-            "metrics": "N/A (Auto-detected)", # Could extract via OCR regex
-            "visual_cues": []
+            "metrics": "N/A (Auto-detected)",  # Could extract via OCR regex
+            "visual_cues": [],
+            "model_prediction": "enganoso" if pred_idx == 1 else "autêntico",
+            "model_confidence": score_val,
         }
         llm_response = MODELS['llm'].analyze(text_extracted, llm_meta)
         

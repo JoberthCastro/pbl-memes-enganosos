@@ -49,6 +49,8 @@ class LLMIntegration:
         platform = metadata.get('platform', 'desconhecida') if metadata else 'desconhecida'
         metrics = metadata.get('metrics', 'não informadas') if metadata else 'não informadas'
         visual_cues = metadata.get('visual_cues', []) if metadata else []
+        model_pred = metadata.get('model_prediction', 'desconhecida') if metadata else 'desconhecida'
+        model_conf = metadata.get('model_confidence', 0.0) if metadata else 0.0
         
         prompt = f"""
 Você é um analista forense digital especializado em detectar desinformação e manipulação em mídias sociais.
@@ -59,12 +61,14 @@ Sua tarefa é analisar o conteúdo extraído de uma imagem (possível meme ou pr
 - **Plataforma Estimada:** {platform}
 - **Métricas Visíveis:** {metrics}
 - **Indícios Visuais:** {", ".join(visual_cues)}
+- **Previsão do Modelo Multimodal (Vision+Text+OCR)**: {model_pred} (confiança {model_conf:.2f})
 
 **Instruções CRUCIAIS:**
 1. **IGNORE ERROS DE OCR:** O texto foi extraído automaticamente de uma imagem de baixa qualidade. Erros como 'Satide' (Saúde), 'reforga' (reforça), 'vacinagao' (vacinação) ou caracteres estranhos são artefatos técnicos, NÃO prova de fraude. NÃO mencione esses erros como suspeitas.
-2. **FOQUE NA MENTIRA:** Só classifique como 'suspeito' se a **informação** transmitida for falsa, enganosa, alarmista ou impossível (ex: 'Vacina causa autismo', 'Terra é plana', '999 trilhões de likes').
-3. **CONTEXTO:** Se o texto for uma notícia plausível (ex: campanha de vacinação, obra em ponte, resultado de jogo), classifique como 'autêntico', mesmo que a formatação esteja feia.
-4. **FONTES:** Nomes de jornais genéricos (ex: 'Jornal_Real_10') são comuns em datasets sintéticos de teste. Não use o nome da fonte como único critério para suspeita, a menos que imite um jornal famoso para enganar.
+2. **CONSIDERE O MODELO MULTIMODAL:** A previsão `{model_pred}` do modelo treinado é um sinal forte, mas você PODE discordar dela se o conteúdo textual indicar o contrário. Se concordar, mencione isso explicitamente na explicação. Se discordar, explique claramente por quê.
+3. **FOQUE NA MENTIRA:** Só classifique como 'suspeito' se a **informação** transmitida for falsa, enganosa, alarmista ou impossível (ex: 'Vacina causa autismo', 'Terra é plana', '999 trilhões de likes').
+4. **CONTEXTO:** Se o texto for uma notícia plausível (ex: campanha de vacinação, obra em ponte, resultado de jogo), classifique como 'autêntico', mesmo que a formatação esteja feia.
+5. **FONTES:** Nomes de jornais genéricos (ex: 'Jornal_Real_10') são comuns em datasets sintéticos de teste. Não use o nome da fonte como único critério para suspeita, a menos que imite um jornal famoso para enganar.
 
 **Decisão:**
 - Se a mensagem for uma verdade aceita ou notícia plausível -> 'autêntico'.
